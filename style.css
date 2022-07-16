@@ -1,0 +1,71 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(75, 66, 67) 38%, rgb(0, 0, 0) 55%, rgb(94, 92, 92) 70%, rgrgb(0, 0, 0)00%);
+overflow-y: hidden;
+}
+
+h1{
+    animation: foda 8s ease infinite;
+    text-align: center;
+    margin-top: 2px;
+    color: aqua;
+display: block;
+
+}
+.img{
+    margin: 10px;
+}
+
+.monke {
+    transition: all 1s;
+    height: 500px;
+    width: 500px;
+    object-fit: contain;
+}
+.monke:hover{
+    filter: contrast(10);
+}
+
+.monkeswim{
+    height: 500px;
+    object-fit:cover;
+}
+
+.monkeswim:hover{
+    filter:sepia(10);
+}
+
+.img-container{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+
+@keyframes foda {
+    0% {
+      transform: perspective(100px)rotate(0deg)
+    }
+    18.75% {
+      transform: perspective(100px)rotateX(180deg)rotateY(0);
+    }
+    37.5% {
+      transform: perspective(100px)rotateX(180deg)rotateY(180deg);
+    }
+    56.25% {
+      transform: perspective(100px)rotateX(0)rotateY(180deg);
+    }
+    75% {
+      transform: perspective(100px)rotateX(0)rotateY(0);
+    }
+    100% {
+      transform: perspective(100px)rotateX(0)rotateY(0);
+    }
+  }
