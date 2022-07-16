@@ -5,8 +5,7 @@ html, body{
     width: 100%;
     background: rgb(2,0,36);
 background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(75, 66, 67) 38%, rgb(0, 0, 0) 55%, rgb(94, 92, 92) 70%, rgrgb(0, 0, 0)00%);
-overflow-y: hidden;
-overflow-x: hidden;
+overflow: hidden;
 }
 
 h1{
